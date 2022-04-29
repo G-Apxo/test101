@@ -1,0 +1,18 @@
+body {
+    background-color: rgba(226, 226, 226, 0.559);
+}
+header{
+    display: flex;
+    justify-content:center;
+}
+
+.navigation{
+    width: 25%;
+    height: 200px;
+    
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
