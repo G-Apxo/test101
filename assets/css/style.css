@@ -1,0 +1,96 @@
+body {
+    background-color: rgba(226, 226, 226, 0.559);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@300&display=swap');
+@font-face {
+    font-family: 'MynewFont';
+    src: url('../Fonts/fontawesome-webfont.eot');
+}
+header{
+    display: flex;
+    justify-content:center;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.navigation{
+  width: 100%;
+}
+.nav-link{
+    margin-left: 15%;
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+    font-family: 'Rosario', sans-serif;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 3px #999;
+}
+.nav-link:nth-child(2){
+    color: red;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+
+.test-box-model{
+    box-shadow: 13px 9px 15px 11px #c04747;
+    background-color: rgb(red, green, blue);
+    width: 50%;
+    height: 60px;
+    margin: 5%;
+    padding: 5%;
+    border: 1px solid black;
+}
+.test-box-model p {
+    color: black;
+}
+
+.box-outer{
+    background-color: rgba(214, 72, 72, 0.1);
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 15px;
+}
+.primary{
+    background-color: blue;
+}
+.danger{
+    background-color: red;
+}
+.alert{
+    background-color: yellow;
+}
+.banner-section{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 1366px;
+}
+.row{
+    display: flex;
+    justify-content:space-between;
+}
+.col-4{
+    width: 33.3%;
+}
+.col-6{
+    width: 50%;
+}
+.card{
+    width: auto;
+    padding: 5%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
