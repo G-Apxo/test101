@@ -1,0 +1,11 @@
+.alert-danger{
+    background-color: red;
+}
+.btn_otuline_cusotm{
+    background-color: transparent;
+    border: 5px solid green !important;
+    border: 2px;
+}
+.card{
+    border: none !important;
+}
