@@ -1,96 +1,142 @@
-body {
-    background-color: rgba(226, 226, 226, 0.559);
+body{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-@import url('https://fonts.googleapis.com/css2?family=Rosario:wght@300&display=swap');
-@font-face {
-    font-family: 'MynewFont';
-    src: url('../Fonts/fontawesome-webfont.eot');
-}
-header{
-    display: flex;
-    justify-content:center;
-    height: 50px;
-    background-color: aquamarine;
-}
-
-.navigation{
-  width: 100%;
-}
-.nav-link{
-    margin-left: 15%;
-    font-weight: bolder;
-    font-style: italic;
-    color: black;
-    font-family: 'Rosario', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 5px 5px 3px #999;
-}
-.nav-link:nth-child(2){
-    color: red;
-}
-ul{
-    display: flex;
-    list-style: none;
-}
-
-.test-box-model{
-    box-shadow: 13px 9px 15px 11px #c04747;
-    background-color: rgb(red, green, blue);
-    width: 50%;
-    height: 60px;
-    margin: 5%;
-    padding: 5%;
-    border: 1px solid black;
-}
-.test-box-model p {
-    color: black;
-}
-
-.box-outer{
-    background-color: rgba(214, 72, 72, 0.1);
-}
-.btn{
-    width: 100px;
-    height: 30px;
-    border: none;
-    color: white;
-    border-radius: 15px;
-}
-.primary{
-    background-color: blue;
-}
-.danger{
-    background-color: red;
-}
-.alert{
     background-color: yellow;
 }
-.banner-section{
-    margin-top: 120px;
-    margin-bottom: 120px;
+@media only screen and (max-width:450px){
+    body{
+        background-color: blue;
+    }
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .mob-only{
+        display: none;
+    }
+    .mob-view{
+        display: block;
+    }
+}
+h1{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 42px;
+line-height: 50px;
+
+color: #040200;
+
+}
+
+    p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #040200;
+    opacity: 0.6;
+    }
+button{
+    background: #FF99C8;
+    border-radius: 10px;
+    width: 260px;
+    height: 70px;
+    border: none;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: #040200;
+}
+.nav-link a{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #040200;
+    opacity: 0.4;
+    margin-left: 30px;
+}
+.nav-link a:hover{
+    color: #000000;
+    opacity: 1;
+}
+.header-align{
+    display: flex;
+    list-style:none;
 }
 section{
     display: flex;
     justify-content: center;
 }
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
 .container{
-    width: 1366px;
+    width: 1320px;
 }
 .row{
     display: flex;
-    justify-content:space-between;
-}
-.col-4{
-    width: 33.3%;
+    justify-content: space-between;
 }
 .col-6{
     width: 50%;
 }
-.card{
-    width: auto;
-    padding: 5%;
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 15px 5px #000000;
+.d-flex{
+    display: flex;
+}
+.mt-5{
+    margin-top: 15px;
+}
+.mb-5{
+    margin-bottom: 15px;
+}   
+.grid-container {
+    border: solid 2px #000;
+    display: grid;
+    grid-template-columns:30% 40% 30%;
+    grid-template-rows: 4em 5em;
+}
+.grid-item {
+    box-sizing: border-box;
+    text-align:center;
+    font-size: 1.1em;
+    padding: 1.5em;
+    color: black;
+} 
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation: move 15s infinite;
+}
+@keyframes move {
+    0% {
+       transform: rotate(0deg) translateX(40px) rotate(0deg);
+    }
+    100% {
+       transform: rotate(360deg) translateX(40px) rotate(-360deg);
+    }
+ }
+
+p{
+    position: relative;
+}
+.test-box{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+.absolute{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 15%;
+    right: 0px;
 }
