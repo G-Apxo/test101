@@ -9,3 +9,12 @@
 .card{
     border: none !important;
 }
+body{
+    background-color: gray;
+}
+h1{
+    font-size: 4em;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color:black;
+    color: rgb(255, 255, 255);
+}
