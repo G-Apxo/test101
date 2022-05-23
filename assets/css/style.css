@@ -1,142 +1,77 @@
 body{
-    margin: 0;
-    background-color: yellow;
+    background: #222A36;
+    overflow-x: hidden;
 }
-@media only screen and (max-width:450px){
-    body{
-        background-color: blue;
-    }
-    h1{
-        font-size: 25px;
-    }
-    p{
-        font-size: 15px;
-    }
-    .mob-only{
-        display: none;
-    }
-    .mob-view{
-        display: block;
-    }
+.about__desctiption{
+    color: rgba(255, 255, 255, 0.5);
 }
-h1{
-font-family: 'Lato';
-font-style: normal;
-font-weight: 800;
-font-size: 42px;
-line-height: 50px;
+.main-header{
+    color: white;
+}
+.email_button{
+    height: 64px;
+    background: #676CDB;
+    color: white;
+}
+.downloand_button{
+    height: 64px;
+    background: transparent;
+    color: white;
+}
+.person{
+    width: 100%;
+}
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+.banner-section{
+    background-image: url('../img/person.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    height: 750px;
+}
+@media only screen and (min-width: 1200px) {
+    .person {
+     display: none;
+    }
 
-color: #040200;
+  }
 
-}
 
-    p{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #040200;
-    opacity: 0.6;
+  .icon_list{
+      background-color: black;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  .icon{
+      width: 100%;
+  }
+  @media only screen and (max-width: 540px) {
+      body{
+          overflow-x: hidden !important;
+      }
+    .banner-section {
+     background-image: none;
+    }   
+    .icon_list{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
     }
-button{
-    background: #FF99C8;
-    border-radius: 10px;
-    width: 260px;
-    height: 70px;
-    border: none;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;
-    color: #040200;
+  }
+.my_experiance{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-.nav-link a{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #040200;
-    opacity: 0.4;
-    margin-left: 30px;
+.custom_color{
+    color: #676CDB;
 }
-.nav-link a:hover{
-    color: #000000;
-    opacity: 1;
+.font-end{
+    background: #676CDB;
+    height: 100%;
 }
-.header-align{
-    display: flex;
-    list-style:none;
-}
-section{
-    display: flex;
-    justify-content: center;
-}
-.justify-center{
-    display: flex;
-    justify-content: center;
-}
-.container{
-    width: 1320px;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-}
-.col-6{
-    width: 50%;
-}
-.d-flex{
-    display: flex;
-}
-.mt-5{
-    margin-top: 15px;
-}
-.mb-5{
-    margin-bottom: 15px;
-}   
-.grid-container {
-    border: solid 2px #000;
-    display: grid;
-    grid-template-columns:30% 40% 30%;
-    grid-template-rows: 4em 5em;
-}
-.grid-item {
-    box-sizing: border-box;
-    text-align:center;
-    font-size: 1.1em;
-    padding: 1.5em;
-    color: black;
-} 
-.box{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: red;
-    position: relative;
-    animation: move 15s infinite;
-}
-@keyframes move {
-    0% {
-       transform: rotate(0deg) translateX(40px) rotate(0deg);
-    }
-    100% {
-       transform: rotate(360deg) translateX(40px) rotate(-360deg);
-    }
- }
-
-p{
-    position: relative;
-}
-.test-box{
-    position: relative;
-    width: 500px;
-    height: 500px;
-    background-color: blue;
-}
-.absolute{
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: absolute;
-    top: 15%;
-    right: 0px;
+.secondary_column{
+    background: #C4C4C4;
 }
