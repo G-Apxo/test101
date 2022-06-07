@@ -1,141 +1,127 @@
-* {
+/* Basic Style
+body {
+    background: #fff;
+    color: #333;
+    font-family: Lato, sans-serif;
+  }
+  .container {
+    display: block;
+    width: 400px;
+    margin: 100px auto 0;
+  }
+  ul {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
-  
-  body {
-    background-image: linear-gradient(120deg, #f6d365, #fda085);
-    color: white;
-    font-family: "Poppins", sans-serif;
-    min-height: 100vh;
+  li * {
+    float: left;
   }
-  
-  header {
-    font-size: 1.5rem;
+  li, h3 {
+    clear:both;
+    list-style:none;
   }
-  
-  header,
-  form {
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  form input,
-  form button {
-    padding: 0.5rem;
-    font-size: 2rem;
-    border: none;
-    background: white;
-  }
-  
-  form button {
-    color: #d88771;
-    background: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  form button:hover {
-    background: #d88771;
-    color: white;
-  }
-  
-  .todo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .todo-list {
-    min-width: 30%;
-    list-style: none;
-  }
-  
-  .todo {
-    margin: 0.5rem;
-    background: white;
-    color: black;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.5s ease;
-  }
-  
-  .todo li {
-    flex: 1;
-  }
-  
-  .trash-btn,
-  .complete-btn {
-    background: #ff6f47;
-    color: white;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  .complete-btn {
-    background: rgb(73, 204, 73);
-  }
-  
-  .todo-item {
-    padding: 0rem 0.5rem;
-  }
-  
-  /* ables us to click in the trash logo, without this when clicking nothing heppens */
-  .fa-trash,
-  .fa-check {
-    pointer-events: none;
-  }
-  
-  .completed {
-    text-decoration: line-through;
-    opacity: 0.5;
-  }
-  
-  .fall {
-    transform: translateY(8rem) rotateZ(20deg);
-    opacity: 0;
-  }
-  
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  input, button {
     outline: none;
-    border: none;
   }
-  
-  .select {
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  select {
-    color: #ff6f47;
-    width: 10rem;
+  button {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    margin: 10px 0 0;
+    font-family: Lato, sans-serif;
     cursor: pointer;
-    padding: 1rem;
+  }
+  button:hover {
+    color: #333;
+  }
+  /* Heading */
+  h3,
+  label[for='new-task'] {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+  }
+  input[type="text"]:focus {
+    color: #333;
   }
   
-  .select::after {
-    content: "\25BC";
-    position: absolute;
-    background: #ff6f47;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    pointer-events: none;
+  /* New Task */
+  label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+  }
+  input#new-task {
+    float: left;
+    width: 318px;
+  }
+  p > button:hover {
+    color: #0FC57C;
   }
   
-  .select:hover::after {
-    background: white;
-    color: #ff6f47;
+  /* Task list */
+  li {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+  li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+  }
+  li > label {
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+    padding: 0 0 0 11px;
+  }
+  li >  input[type="text"] {
+    width: 226px;
+  }
+  li > .delete:hover {
+    color: #CF2323;
   }
   
+  /* Completed */
+  #completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Edit Task */
+  /* ul li input[type=text] {
+    display:none;
+  }
+  
+  ul li.editMode input[type=text] {
+    display:block;
+  }
+  
+  ul li.editMode label {
+    display:none;
+  }  */
+  .mystyle{
+    width: 100%;
+    padding: 25px;
+    color: wheat;
+    background-color: chocolate;
+  }
+ 
