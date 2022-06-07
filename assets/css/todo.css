@@ -1,0 +1,54 @@
+body{
+    background-color: #f1874d;;  
+}
+header{
+    font-size: 1.5rem;
+}
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,
+form button{
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+}
+
+form button {
+    color: #f1874d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+form button:hover {
+    background-color: #f1874d;
+    color: white;
+}
+select{
+    margin-left: 15px;
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    background-color: #f1874d;
+}
+select:hover{
+    color: #f1874d;
+    border: #f1874d 1px solid;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+.todo-continer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    width: 50%;
+    list-style-type: none;
+}
