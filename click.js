@@ -1,16 +1,16 @@
-// function myFunction(){
-//     document.getElementById("demo").innerHTML = "<button>more button</button>"
-// }
+function myFunction(){
+    document.getElementById("demo").innerHTML = "<button>more button</button>"
+}
 
 
-//     document.getElementById("click").onclick = function() {myFunction()};
+    document.getElementById("click").onclick = function() {myFunction()};
 
 
-    // function toogleFunction(){
-    //     var element = document.getElementById("myDiv");
+    function toogleFunction(){
+        var element = document.getElementById("myDiv");
         
-    //     element.classList.toggle("mystyle")
-    // }
+        element.classList.toggle("mystyle")
+    }
 
 
     var button = document.getElementById("clickme"),
